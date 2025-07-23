@@ -1,0 +1,4 @@
+PyQt5
+python-dotenv
+azure-cognitiveservices-speech
+pyinstaller
