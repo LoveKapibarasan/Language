@@ -33,38 +33,8 @@ This repository provides a dual-purpose GUI tool:
 
 ---
 
-## 📂 Directory Structure
 
-```
-project/
-├── main.py                   # Azure Speech GUI launcher
-├── add_audio_image.py        # Flashcard file processor
-├── reformat_word_list.py     # Reformatter for raw word lists
-├── extract_word_list.py      # Pattern-based extractor
-├── check_duplication.py      # Optional duplicate checker
-├── setting.json              # Configuration file for each language
-├── id_info_file.txt          # Auto-increment ID tracker
-├── ico/
-│   └── azure.ico             # Icon used in GUI
-└── input/, output/           # Working directories
-```
 
----
-
-## 📦 Requirements
-
-Install required libraries:
-
-```bash
-pip install PyQt5 openai python-dotenv
-```
-
-Other modules used:
-- `json`, `shutil`, `re`, `os`, `sys`
-- `PIL` (for image conversion if extended)
-- Azure SDK (if using speech service integration)
-
----
 
 ## ⚙️ Configuration Example (`setting.json`)
 
@@ -83,38 +53,7 @@ Other modules used:
 
 ---
 
-## 🧪 Example Flashcard Output
 
-| ID           | Text                          | Audio           | Image           |
-|--------------|-------------------------------|------------------|------------------|
-| English_1    | Hello<br>world                 | English_1.wav    | English_1.png    |
-| English_2    | Nice<br>to<br>meet<br>you      | English_2.wav    | English_2.png    |
-
----
-
-## 🖥️ How to Launch
-
-### 🔊 Speech Mode Selector:
-
-```bash
-python main.py
-```
-
-### 🧩 Flashcard Generator:
-
-```bash
-python add_audio_image.py
-```
-
----
-
-## ✅ Notes
-
-- Ensure all paths in `setting.json` exist and are valid.
-- Placeholders like `.wav` and `.png` can be later filled with real audio/image data.
-- Text formatting rules are automatically applied based on language.
-
----
 
 ## 📄 License
 
