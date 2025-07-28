@@ -1,0 +1,18 @@
+{
+  "en-US": {
+    "name": "en-US-Wavenet-D",
+    "gender": "FEMALE"
+  },
+  "en-GB": {
+    "name": "en-GB-Wavenet-B",
+    "gender": "FEMALE"
+  },
+  "ja-JP": {
+    "name": "ja-JP-Wavenet-A",
+    "gender": "FEMALE"
+  },
+  "de-DE": {
+    "name": "de-DE-Wavenet-C",
+    "gender": "FEMALE"
+  }
+}

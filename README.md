@@ -1,11 +1,5 @@
 # 🎙️ Speech & Flashcard Utility Suite
 
-This repository provides a dual-purpose GUI tool:
-
-1. **Azure Speech Service Launcher** – for Text-to-Speech (TTS) and Speech-to-Text (STT) using Azure.
-2. **Flashcard File Processor** – for preparing multilingual Anki flashcards with audio/image support.
-
----
 
 ## 🚀 Features
 
@@ -30,6 +24,13 @@ This repository provides a dual-purpose GUI tool:
   - Automatic ID tracking (`id_info_file`)
   - Word formatting (`reformat_word_list.py`)
 - Detects duplicates before proceeding
+
+---
+### 🧑‍💻 3. Google TTS Utility (`google_tts_module.py`)
+
+**Purpose**: Provides a minimal interface for generating speech using **Google Text-to-Speech** (`gTTS`).
+
+
 
 ---
 
