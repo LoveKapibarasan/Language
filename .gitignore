@@ -1,6 +1,9 @@
-azure_sounds/.env
-anki_flashcards/setting.json
-google_tts/key.json
+.env
+setting.json
+key.json
+**.mp3
+**.mp4
+
 
 ### AL ###
 #Template for AL projects for Dynamics 365 Business Central
