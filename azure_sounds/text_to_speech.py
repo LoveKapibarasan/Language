@@ -10,8 +10,14 @@ from dotenv import load_dotenv
 # Load API key, region, and separator from .env
 load_dotenv()
 speech_key = os.getenv("AZURE_SPEECH_KEY")
-service_region = os.getenv("AZURE_REGION")
+service_region = os.getenv("AZURE_SPEECH_REGION")
 separator = os.getenv("SEPARATOR", "|")  # Default to "|" if not set
+
+# Validate required environment variables
+if not speech_key:
+    print("Error: AZURE_SPEECH_KEY not found in .env file")
+if not service_region:
+    print("Error: AZURE_SPEECH_REGION not found in .env file")
 
 
 class SpeechSynthApp(QtWidgets.QWidget):
@@ -134,8 +140,8 @@ class SpeechSynthApp(QtWidgets.QWidget):
 
             # Then play the audio (synthesize again for playback)
             if result_file.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
-                audio_config_speaker = speechsdk.audio.AudioConfig(use_default_speaker=True)
-                speech_synthesizer_speaker = speechsdk.SpeechSynthesizer(speech_config=speech_config, audio_config=audio_config_speaker)
+                # Use default audio output (speakers) - no audio config needed for default output
+                speech_synthesizer_speaker = speechsdk.SpeechSynthesizer(speech_config=speech_config)
                 result_speaker = speech_synthesizer_speaker.speak_text_async(segment.strip()).get()
                 
                 result = result_file  # Use file result for error checking
