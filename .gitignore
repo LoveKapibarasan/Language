@@ -1,8 +1,11 @@
 .env
+**.env
 setting.json
 key.json
 **.mp3
 **.mp4
+__pycache__
+output/
 
 
 ### AL ###

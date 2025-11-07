@@ -1,7 +1,7 @@
 import os
 import sys
-from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import QFileDialog, QMessageBox
+from PyQt6 import QtWidgets
+from PyQt6.QtWidgets import QFileDialog, QMessageBox
 import azure.cognitiveservices.speech as speechsdk
 from dotenv import load_dotenv
 

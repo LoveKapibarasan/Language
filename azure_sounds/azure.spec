@@ -8,7 +8,7 @@ binaries = collect_dynamic_libs("azure.cognitiveservices.speech")
 
 a = Analysis(
     ['main.py'],
-    pathex=["C:/Users/lovek/PycharmProjects/ForFun/azure_sounds"],
+    pathex=[],
     binaries=binaries,
     datas=[],
     hiddenimports=["speech_to_text","text_to_speech"],
